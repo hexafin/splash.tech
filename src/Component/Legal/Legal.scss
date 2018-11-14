@@ -1,0 +1,121 @@
+@import "../../assets/scss/sp_variables";
+@import "../../assets/scss/mixin";
+@import "bootstrap/scss/bootstrap.scss";
+
+
+.sp-terms-page{
+    padding: 40px 0 20px;
+    position: relative;
+    background: white;
+    z-index: 1;
+    @include media-breakpoint-up(md){
+        padding: 60px 0 30px;
+    }
+    @include media-breakpoint-up(lg){
+        padding: 80px 0 40px;
+    }
+    @include media-breakpoint-up(xl){
+        padding: 100px 0 50px;
+    }
+    .sp-terms-ofues-page{
+        h2{
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 40px;
+            @include media-breakpoint-up(md){
+                font-size: 45px;
+                line-height: 50px;
+            }
+            @include media-breakpoint-up(lg){
+                font-size: 60px;
+                line-height: 65px;
+            }
+            @include media-breakpoint-up(xl){
+                font-size: 75px;
+                line-height: 80px;
+            }
+        }
+        h3{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            color: black;
+            margin: 40px 0 20px;
+            @include media-breakpoint-up(md){
+                line-height: 27px;
+                font-size: 22px;
+            }
+            @include media-breakpoint-up(lg){
+                line-height: 30px;
+                font-size: 26px;
+            }
+            @include media-breakpoint-up(xl){
+                line-height: 35px;
+                font-size: 30px;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $dark-gray;
+        }
+        .sp-listing{
+            margin: 30px 0;
+            h4{
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                color: black;
+                margin-bottom: 15px;
+                @include media-breakpoint-up(md){
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                @include media-breakpoint-up(lg){
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $dark-gray;
+                a{
+                    word-break: break-all;
+                    display: block;
+                    color: $green;
+                    &:hover{
+                        color: $dark-gray;
+                    }
+                }
+            }
+            ul{
+                padding: 20px 0;
+                li{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $dark-gray;
+                    position: relative;
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    &::before{
+                        width: 5px;
+                        height: 5px;
+                        background: $dark-gray;
+                        content: '';
+                        position: absolute;
+                        border-radius: 50%;
+                        top: 10px;
+                        left: -15px;
+                    }
+                }
+            }
+        }
+    }
+    &.sp-privacy-main{
+        background: #fcfcfc;
+    }
+}

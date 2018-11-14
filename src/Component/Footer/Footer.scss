@@ -1,0 +1,164 @@
+@import "../../assets/scss/sp_variables";
+@import "../../assets/scss/mixin";
+@import "bootstrap/scss/bootstrap.scss";
+.sp-footer{
+    display: none; 
+    @include media-breakpoint-up(md){
+        display: inherit;
+    }
+}
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 75px 0 34px;
+    background-color: #fafafa;
+    @include media-breakpoint-up(md){
+        padding: 90px 0;
+        position: fixed;
+    }
+    @include media-breakpoint-up(xl){
+        padding: 115px 0;
+    }
+    .sp-footer-logo {
+        text-align: center;
+        margin-bottom: 55px;
+        @include media-breakpoint-up(md){
+            text-align: left;
+            margin-bottom: 0;
+        }
+        img {
+            height: auto;
+            width: 42px;
+        }
+    }
+    .sp-footer-menu{
+        text-align: center;
+        margin-bottom: 55px;
+        @include media-breakpoint-up(md){
+            text-align: left;
+            margin-bottom: 0;
+        }
+        h5 {
+            font-weight: 500;
+            color: $black;
+            font-size: 15px;
+            &.sp-receive-hide{
+                display: block;
+                @include media-breakpoint-up(md){
+                    display: none;
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        li {
+            a {
+                font-weight: 500;
+                color: $black;
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 400;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 40%;
+                    right: 0;
+                    left: 0;
+                    bottom: -40%;
+                    transition: all .35s ease-in-out;
+                    opacity: 0;
+                    background-color: $green;
+                    opacity: 0;
+                    z-index: -1;
+                }
+                &:hover {
+                    color: $black;
+                    opacity: 1;
+                    &::after {
+                        bottom: 0;
+                        opacity: 1;
+                    }
+                }
+                // transition: all 0.3s ease-in-out;
+                // &:hover{
+                //     opacity: 0.75;
+                //     color: $black;
+                // }
+                }
+            }
+        }
+    }
+    .sp-news-block {
+        .sp-news-form {}
+        .sp-news-inputblock {
+            flex: 1 1 auto;
+            margin: 0 auto;
+            padding: 0 12px;
+            @include media-breakpoint-up(md){
+                margin-right: 10px;
+                padding: 0;
+            }
+            input {
+                background: transparent;
+                font-size: 14px;
+                color: $black;
+                font-weight: 500;
+                &:focus {
+                    box-shadow: none;
+                    border-color: #bdbdc9;
+                }
+            }
+        }
+        .sp-news-group {
+            text-align: center;
+            @include media-breakpoint-up(md){
+                justify-content: center;
+                text-align: left;
+                display: flex;
+            }
+        }
+        .sp-btn-update {
+            @include black-btn;
+            background: #373a3a;
+            border-color: #373a3a;
+            margin-top: 30px;
+            @include media-breakpoint-up(md){
+                margin-top: 0;
+            }
+            &:hover{
+                background: #373a3a;
+                border-color: #373a3a;
+                opacity: 0.5;
+                color: #fff;
+            }
+        }
+    }
+    .sp-darkroom-link{
+        text-align: center;
+        display: block;
+        margin-top: 120px;
+        @include media-breakpoint-up(md){
+            display: none;
+        }
+        span{
+            font-weight: 500;
+            font-size: 16px;
+            color: $dark-gray;
+            text-align: center;
+            a{
+                color: black;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}

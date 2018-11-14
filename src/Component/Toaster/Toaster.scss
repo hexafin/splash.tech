@@ -1,0 +1,35 @@
+@import '../../assets/scss/sp_variables';
+@import '../../assets/scss/mixin';
+
+.gb-toaster-msg{
+    animation: deactive 0.5s linear forwards;
+    left: 0px;
+    bottom:0px;
+    right: 0px;
+    text-align: center;
+    z-index: 1055;
+    position:fixed;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    &.gb-sucsess-msg{
+        animation: active 20s linear forwards;
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    h1{
+        color: $black;
+        padding: 15px 30px;
+        display: inline-block;
+        font-size: 20px;
+        border-radius: 5px;
+        background: white;
+        &.green{
+            border: 1px solid green;
+        }
+        &.red{
+            border: 1px solid red;
+        }
+    }
+
+}

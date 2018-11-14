@@ -1,0 +1,24 @@
+@import "./assets/scss/sp_variables";
+@import "./assets/scss/mixin";
+@import "./assets/fonts/stylesheet.css";
+
+
+body{
+  font-family: $objective;
+  text-rendering: optimizeLegibility !important; 
+  -webkit-font-smoothing: antialiased !important; 
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+a,p,ul,li,h1,h2,h3,h4,h5,h6{
+  padding: 0px;
+  margin: 0px;
+}
+
+li{
+  list-style: none;
+}
