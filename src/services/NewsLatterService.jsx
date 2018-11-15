@@ -1,5 +1,5 @@
 import axios from "axios";
 import {environment} from '../environment';
 export const subscribeList = (body) => {
-        return axios.get(environment.mailchimpUrl+"lists/subscribe.json?apikey="+environment.mailchimpApi+"'&id="+environment.mailchimpListid+"&c=?&email[email]='"+body.email+"'&double_optin=false");
+        return axios.get("https://us-central1-hexa-splash.cloudfunctions.net/subscribeEmail?email="+body.email)
 }

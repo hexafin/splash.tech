@@ -128,7 +128,7 @@ class Footer extends Component {
             CommanService.showToaster('success',"Thank you. Your request has been submitted");
         })
         .catch((res) => {
-            CommanService.showToaster(res.response.data.status,res.response.data.error);
+            CommanService.showToaster(res.response.status,res.message);
             console.error('contactRequest =>', res)
         });;
         e.target.reset();
