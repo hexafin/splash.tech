@@ -169,6 +169,8 @@ class Landing extends Component {
     }
     componentDidMount(){
         AOS.init();
+        let element = document.body;
+        element.scrollIntoView({block:'start'});
     }
 }
 
