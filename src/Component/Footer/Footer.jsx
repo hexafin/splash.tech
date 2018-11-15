@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.scss';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import * as NewsLetterService from '../../services/NewsLatterService';
 import * as CommanService from '../../services/CommanService';
 
@@ -8,11 +8,16 @@ class Footer extends Component {
     constructor(){
         super()
         this.updateDimensions = this.updateDimensions.bind(this);
+        this.redirectToLanding = this.redirectToLanding.bind(this);
         this.state={
-            footerHeight:''
+            footerHeight:'',
+            toLanding: false,
         }
     }
     render() {
+        if (this.state.toLanding === true) {
+              return <Redirect to='/' />
+        }
         return (
             <React.Fragment>
             <div className="sp-footer" style={{height:this.state.footerHeight}}>
@@ -43,8 +48,8 @@ class Footer extends Component {
                                 <div className="sp-footer-menu" data-aos="fade-zoom-in" data-aos-delay="600">
                                     <h5>Resources</h5>
                                     <ul>
-                                        <li><a href="https://itunes.apple.com/app/id1398891726" target="_blank" rel="noopener noreferrer">Download app</a></li>
-                                        <li><Link to="/">Claim your Splash tag</Link></li>
+                                        {/*<li><a href="https://itunes.apple.com/app/id1398891726" target="_blank" rel="noopener noreferrer">Download app</a></li> */}
+                                        {/*<li><Link to="/">Claim your Splash tag</Link></li> */}
                                         <li><a href="https://t.me/joinchat/EjQODwyF10VliZ4fQ0SL8Q" target="_blank" rel="noopener noreferrer">Join the Telegram</a></li>
                                         <li><Link to="legal">Legal</Link></li>
                                     </ul>
@@ -89,35 +94,49 @@ class Footer extends Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.updateDimensions);
     }
+    redirectToLanding(func) {
+        this.setState({toLanding: true}, () => {
+            func()
+            this.setState({toLanding:false})
+        })
+    }
     goToAboutus(e){
-        e.preventDefault()
         // let data = "";
         // console.log(data = document.getElementsByClassName('sp-getintouch-block')[0]);
-        let element = document.getElementsByClassName('sp-team-block')[0];
-        if(element){
-            element.scrollIntoView({behavior: 'smooth',block:'start'});
-        }
+        this.redirectToLanding(() => {
+            e.preventDefault()
+            let element = document.getElementsByClassName('sp-team-block')[0];
+            if(element){
+                element.scrollIntoView({behavior: 'smooth',block:'start'});
+            }
+        })
     }
     goToFeatures(e){
-        e.preventDefault()
-        let element = document.getElementsByClassName('sp-feture-content')[0];
-        if(element){
-            element.scrollIntoView({behavior: 'smooth',block:'start'});
-        }
+        this.redirectToLanding(() => {
+            e.preventDefault()
+            let element = document.getElementsByClassName('sp-feture-content')[0];
+            if(element){
+                element.scrollIntoView({behavior: 'smooth',block:'start'});
+            }
+        })
     }
     goToContactus(e){
-        e.preventDefault()
-        let element = document.getElementsByClassName('sp-getintouch-block')[0];
-        if(element){
-            element.scrollIntoView({behavior: 'smooth',block:'start'});
-        }
+        this.redirectToLanding(() => {
+            e.preventDefault()
+            let element = document.getElementsByClassName('sp-getintouch-block')[0];
+            if(element){
+                element.scrollIntoView({behavior: 'smooth',block:'start'});
+            }
+        })
     }
     goToTop(e){
-        e.preventDefault()
-        let element = document.body;
-        if(element){
-            element.scrollIntoView({block:'start'});
-        }
+        this.redirectToLanding(() => {
+            e.preventDefault()
+            let element = document.body;
+            if(element){
+                element.scrollIntoView({block:'start'});
+            }
+        })
     }
     subscribeNewslatter(e){
         e.preventDefault();
@@ -125,7 +144,7 @@ class Footer extends Component {
             email:e.target.getElementsByClassName('subscriberEmail')[0].value
         };
         NewsLetterService.subscribeList(body).then((res) => {
-            CommanService.showToaster('success',"Thank you. Your request has been submitted");
+            CommanService.showToaster('success',"Thanks for your interest in Splash! We’ll keep you in the loop.");
         })
         .catch((res) => {
             CommanService.showToaster(res.response.status,res.message);

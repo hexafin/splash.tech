@@ -3,6 +3,7 @@ import './Landing.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as NewsLetterService from '../../services/NewsLatterService';
+import * as ContactUsService from '../../services/ContactUsService';
 import * as CommanService from '../../services/CommanService';
 
 class Landing extends Component {
@@ -380,7 +381,7 @@ class Landing extends Component {
                             <div className="col-lg-6 offset-lg-3 col-md-10 offset-md-1">
                                 <div className="sp-getintouch-innerblock">
                                     <h2>Get in touch with us</h2>
-                                    <form action="" className="sp-getintouch-form">
+                                    <form onSubmit={e => this.contactUs(e)} action="" className="sp-getintouch-form">
                                         <div className="form-group">
                                             <div className="row m-0 sp-form-border">
                                                 <div className="col-md-6 p-0">
@@ -421,7 +422,7 @@ class Landing extends Component {
                                             <textarea placeholder="Type your message" className="form-control"></textarea>
                                         </div>
                                         <div className="text-center">
-                                            <button className="sp-send-btn" type="submin">Send message</button>
+                                            <button className="sp-send-btn" type="submit">Send message</button>
                                         </div>
                                     </form>
                                 </div>
@@ -445,11 +446,11 @@ class Landing extends Component {
                                                 <i className="sp-fb"></i><span>Facebook</span>
                                             </a>
                                         </li>
-                                        <li>
+                                       {/* <li>
                                             <a href="https://www.instagram.com/splash_wallet/" target="_blank" rel="noopener noreferrer">
                                                 <i className="sp-insta"></i><span>Instagram</span>
                                             </a>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <a href="https://www.linkedin.com/company/splash-tech/" target="_blank" rel="noopener noreferrer">
                                                 <i className="sp-linkedin"></i><span>Linkedin</span>
@@ -539,6 +540,25 @@ class Landing extends Component {
                 mailbox[0].classList.remove('sp-mail-box-show');
         }
     }
+    contactUs(e) {
+        e.preventDefault();
+        const forms = document.getElementsByClassName("form-control")
+        const data = {
+            name: forms[1].value,
+            email: forms[2].value,
+            text: forms[3].value,
+            subject: this.state.selectedSubject
+        }
+        if (data.name && data.email && data.subject && data.text) {
+            ContactUsService.sendMessage(data).then(() => {
+                console.log('yes')
+            }).catch(e => {
+                console.log(e.data)
+            })
+        } else {
+            CommanService.showToaster('failure','Please fill in all info.');
+        } 
+    }
     submitKeepMeUpdate(e){
         e.preventDefault();
         var modalButton = document.getElementById('keep-me-update-modal-btn');
@@ -546,14 +566,14 @@ class Landing extends Component {
             email:e.target.getElementsByClassName('subscriberEmail')[0].value
         };
         NewsLetterService.subscribeList(body).then((res) => {
-            CommanService.showToaster('success',"Thank you. Your request has been submitted");
+            CommanService.showToaster('success',"Thanks for your interest in Splash! We’ll keep you in the loop.");
             modalButton.classList.add('sp-done-active');
             modalButton.innerText = "Done";
         })
         .catch((res) => {
-            CommanService.showToaster(res.response.data.status,res.response.data.error);
+            CommanService.showToaster(res.response.status,res.message);
             console.error('contactRequest =>', res)
-        });
+        });;
         e.target.reset();
         this.hideKeepMeUpdate()
 
