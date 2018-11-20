@@ -466,6 +466,11 @@ class Landing extends Component {
                                             <i className="sp-medium"></i><span>Medium</span>
                                                 </a>
                                         </li>
+                                        <li>
+                                            <a href="https://www.crunchbase.com/organization/splash-tech" target="_blank" rel="noopener noreferrer">
+                                            <i className="sp-crunchbase"></i><span>Crunchbase</span>
+                                                </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
