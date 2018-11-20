@@ -356,7 +356,7 @@ class Landing extends Component {
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Martin Wainstein</h4>
-                                                <span className="sp-member-subtext">Advisor, Open Innocation Fellow Tsai CITY, Digital Currency Initiative at MIT</span>
+                                                <span className="sp-member-subtext">Advisor, Open Innovation Fellow Tsai CITY, Digital Currency Initiative at MIT</span>
                                             </div>
                                         </li>
                                         <li>
@@ -437,7 +437,7 @@ class Landing extends Component {
                                 <div className="sp-social-icon">
                                     <ul>
                                         <li>
-                                            <a href="https://twitter.com/Splash_Wallet" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://twitter.com/splashwallet" target="_blank" rel="noopener noreferrer">
                                                 <i className="sp-tw"></i><span>Twitter</span>
                                             </a>
                                         </li>
@@ -551,9 +551,9 @@ class Landing extends Component {
         }
         if (data.name && data.email && data.subject && data.text) {
             ContactUsService.sendMessage(data).then(() => {
-                console.log('yes')
+                CommanService.showToaster('success',"Thanks for your interest in Splash! We’ll keep you in the loop.");
             }).catch(e => {
-                console.log(e.data)
+                CommanService.showToaster(e.response.status, e.message);
             })
         } else {
             CommanService.showToaster('failure','Please fill in all info.');
