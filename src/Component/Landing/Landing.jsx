@@ -64,7 +64,7 @@ class Landing extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="sp-wallet-block">
+                {/*<section className="sp-wallet-block">
                     <div className="container">
                         <div className="sp-wallet-inner">
                             <div className="row">
@@ -85,7 +85,7 @@ class Landing extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
 
                 <section className="sp-browser-extension-block">
                     <div className="sp-extension-block">
@@ -367,6 +367,32 @@ class Landing extends Component {
                                                 <h4>Daniel DeWolf</h4>
                                                 <span className="sp-member-subtext">Chair, Author, VC Mintz Levin</span>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="sp-supportedby-block">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <h2>Supported By</h2>
+                                <div className="sp-supportedby-icon">
+                                    <ul>
+                                        <li>
+                                            <i className="sp-rdv"></i>
+                                        </li>
+                                        <li>
+                                            <i className="sp-jp"></i>
+                                        </li>
+                                        <li>
+                                            <i className="sp-drf"></i>
+                                        </li>
+                                        <li>
+                                            <i className="sp-tsai"></i>
                                         </li>
                                     </ul>
                                 </div>

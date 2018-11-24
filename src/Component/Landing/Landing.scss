@@ -1565,6 +1565,84 @@
 }
 
 
+.sp-supportedby-block {
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 1;
+    padding: 73px 0px 70px;
+    h2{
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        max-width: 220px;
+        margin: auto;
+        @include media-breakpoint-up(md){
+            font-size: 35px;
+            line-height: 40px; 
+            max-width: 100%;
+        }
+        @include media-breakpoint-up(xl){
+            font-size: 40px;
+            line-height: 45px;
+            letter-spacing: -1px;
+        }
+    }
+    .sp-supportedby-icon{
+        ul{
+            padding: 0 50px 0 50px;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                padding: 56px 0 0px;
+                width: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                @include media-breakpoint-up(md){
+                    width: 16.66%;
+                    margin: 10px 0px;
+                }
+                i{
+                    background-position: center center;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    display: block;
+                    margin: auto;
+                }
+                .sp-rdv{
+                    height: 72px;
+                    width: 56px;
+                    background-image: url('../../assets/images/backers/roughdraft.png');
+                }
+                .sp-jp{
+                    height: 50px;
+                    width: 200px;
+                    background-image: url('../../assets/images/backers/jpmorgan.png');
+                }
+                .sp-drf{
+                    height: 145px;
+                    width: 145px;
+                    background-image: url('../../assets/images/backers/dormroom.png');
+                }
+                .sp-tsai{
+                    height: 100px;
+                    width: 128px;
+                    background-image: url('../../assets/images/backers/tsai.png');
+                }
+            }
+        }
+    }
+}
+
 .sp-social-block{
     border-bottom: 1px solid #eeeeee;
     width: 100%;
