@@ -89,7 +89,7 @@ class Navbar extends Component {
                                     <div className="collapse navbar-collapse sp-menu-toggler justify-content-md-center" id="navbarNavDropdown">
                                         <ul className="navbar-nav text-md-center sp-navbar-nav">
                                             <li className="nav-item">
-                                            <i className="sp-learn-icon"></i><a className="nav-link sp-learn-more" href="https://medium.com/splash-wallet/splash-lets-make-using-crypto-easy-25303b456a6b" target="_blank" rel="noopener noreferrer">Learn more</a>
+                                            <i className="sp-learn-icon"></i><a className="nav-link sp-learn-more" href="https://medium.com/splash-wallet/" target="_blank" rel="noopener noreferrer">Learn more</a>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/" onClick={(e)=>this.goToFeatures(e)}>Features</Link>

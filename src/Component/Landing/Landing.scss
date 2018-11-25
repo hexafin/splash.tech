@@ -1043,7 +1043,14 @@
                     span{
                         color: $green;
                         font-weight: 500;
+                        font-size: 30px;
                         display: inline-flex;
+                    }
+                    img {
+                        height: 32px;
+                        width: auto;
+                        margin-top: 6px;
+                        margin-right: 4px;
                     }
                 }
                 .sp-splashtag-form{
@@ -1185,190 +1192,197 @@
     }
 }
 
-.sp-team-block{
-    // background: $black;
-    padding: 95px 0px 70px;
-    position: relative;
-    z-index: 1;
-        background-image: -webkit-linear-gradient(to bottom, #0b0c0c 0%, #1a1e1e 100%);
-        background-image: -moz-linear-gradient(to bottom, #0b0c0c 0%, #1a1e1e 100%);
-        background-image: -o-linear-gradient(to bottom, #0b0c0c 0%, #1a1e1e 100%);
-        background-image: linear-gradient(to bottom, #0b0c0c 0%, #1a1e1e 100%);
-    // &::before{
-    //     position: absolute;
-    //     content: "";
-    //     top: 0;
-    //     right: 0;
-    //     left: 0;
-    //     bottom: 0;
-    //     margin: 0 auto;
-    //     opacity: 0.5;
-    //     background-image: -webkit-linear-gradient(to bottom, #1a1e1e 0%, #0b0c0c 100%);
-    //     background-image: -moz-linear-gradient(to bottom, #1a1e1e 0%, #0b0c0c 100%);
-    //     background-image: -o-linear-gradient(to bottom, #1a1e1e 0%, #0b0c0c 100%);
-    //     background-image: linear-gradient(to bottom, #1a1e1e 0%, #0b0c0c 100%);
-    // }
+.sp-team-row{
+    text-align: center;
+    margin-bottom: 100px;
     @include media-breakpoint-up(md){
-        padding: 150px 0px;
+        margin-bottom: 145px;
     }
-    @include media-breakpoint-up(xl){
-        padding: 170px 0px 180px;
+    p{
+        color: $white;
+        margin-bottom: 40px;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.75px;
     }
-    @include media-breakpoint-up-xxl{
-        padding: 200px 0px;
-    }
-    .sp-team-row{
-        text-align: center;
-        margin-bottom: 100px;
+    h2{
+        color: $white;
+        margin-bottom: 40px;
+        font-size: 29px;
+        line-height: 32px;
+        font-weight: 500;
+        letter-spacing: -0.75px;
         @include media-breakpoint-up(md){
-            margin-bottom: 145px;
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 60px;
         }
-        &:last-child{
-            margin-bottom: 0px;
+        @include media-breakpoint-up(xl){
+            font-size: 60px;
+            line-height: 65px;
+            letter-spacing: -1.5px;
         }
-        h2{
-            color: $white;
-            margin-bottom: 40px;
-            font-size: 29px;
-            line-height: 32px;
-            font-weight: 500;
-            letter-spacing: -0.75px;
-            @include media-breakpoint-up(md){
-                font-size: 40px;
-                line-height: 45px;
-                margin-bottom: 60px;
-            }
-            @include media-breakpoint-up(xl){
-                font-size: 60px;
-                line-height: 65px;
-                letter-spacing: -1.5px;
-            }
+    }
+    h4{
+        color: $white;
+        display: block;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        @include media-breakpoint-up(md){
+            font-size: 18px;
         }
-        h4{
-            color: $white;
-            display: block;
-            font-size: 16px;
-            font-weight: 500;
+        @include media-breakpoint-up(xl){
+            font-size: 20px;
             letter-spacing: -0.8px;
-            @include media-breakpoint-up(md){
-                font-size: 18px;
-            }
-            @include media-breakpoint-up(xl){
-                font-size: 20px;
-                letter-spacing: -0.8px;
-            }
         }
-        .sp-post{
-            display: block;
-            color: $white;
-            opacity: 0.5;
-            font-size:16px;
-            font-weight: 500;
+    }
+    .sp-post{
+        display: block;
+        color: $white;
+        font-size:16px;
+        font-weight: 500;
+        letter-spacing: -0.8px;
+        @include media-breakpoint-up(md){
+            font-size: 18px;
+        }
+        @include media-breakpoint-up(xl){
+            font-size: 20px;
             letter-spacing: -0.8px;
-            @include media-breakpoint-up(md){
-                font-size: 18px;
-            }
-            @include media-breakpoint-up(xl){
-                font-size: 20px;
-                letter-spacing: -0.8px;
-            }
         }
-        .sp-member-subtext{
+    }
+    .sp-member-subtext{
+        display: block;
+        font-size: 16px;
+        letter-spacing: -0.84px;
+        color: $white;
+    }
+    .sp-member-img{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        background: rgba(255,255,255,0.5);
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }
+        @include media-breakpoint-up(md){
+            width: 120px;
+            height: 120px;
+            margin-bottom: 12px;
+        }
+        @include media-breakpoint-up(xl){
+            width: 152px;
+            height: 152px;
+        }
+    }
+    li{
+        text-align: left;
+    }
+    .sp-post-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+        i{
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 19px;
+            width: 19px;
             display: block;
-            font-size: 14px;
-            letter-spacing: -0.84px;
-            color: $white;
-            opacity: 0.5;
+            margin: auto;
+            margin-right: 5px;
         }
-        .sp-member-img{
-            width: 100px;
-            height: 100px;
-            overflow: hidden;
-            background: rgba(255,255,255,0.5);
+    }
+
+    .sp-linkedin-white{
+        background-image: url('../../assets/images/social/white-linkedin.png')
+    }
+    .sp-linkedin-black{
+        background-image: url('../../assets/images/social/linkedin-icon.svg')
+    }
+    .sp-leadership-list{
+        text-align: center;
+        @include media-breakpoint-down(sm){
+            display: flex;
+            justify-content: space-around;
+            width: 240px;
+            max-width: 100%;
             margin: 0 auto;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            img{
-                width: 100%;
-            }
-            @include media-breakpoint-up(md){
-                width: 110px;
-                height: 110px;
-                margin-bottom: 12px;
-            }
-            @include media-breakpoint-up(xl){
-                width: 132px;
-                height: 132px;
-            }
+            flex-wrap: wrap;
         }
         li{
-            text-align: center;
-        }
-        .sp-member-detail{
-
-        }
-        .sp-leadership-list{
-            text-align: center;
-            @include media-breakpoint-up-xxl{
-                display: flex;
-                justify-content: space-between;
-                width: 1240px;
-                max-width: 100%;
-                margin: 0 auto;
-                flex-wrap: wrap;
+            display: inline-block;
+            width: 300px;
+            margin-right: 10px;
+            @include media-breakpoint-up(md){
+                margin-right: 50px;
             }
-            li{
-                display: inline-block;
-                width: 170px;
-                vertical-align: top;
-                &:last-child{
-                    margin-top: 30px;
-                    @include media-breakpoint-up(md){
-                        margin-top: 0;
-                    }
-                }
-                &:nth-child(2n){
-                    margin-top: 48px;
-                    @include media-breakpoint-up(md){
-                        margin-top: 70px;
-                    }
-                    @include media-breakpoint-up(xl){
-                        margin-top: 98px;
-                    }
-                }
-            }
+            vertical-align: top;
         }
-        .sp-advisory-list{
-            text-align: center;
-            @include media-breakpoint-up-xxl{
-                display: flex;
-                justify-content: space-between;
-                width: 1060px;
-                margin: 0 auto;
-                max-width: 100%;
-                flex-wrap: wrap;
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    }
+    .sp-advisory-list{
+        text-align: center;
+        @include media-breakpoint-up-xxl{
+            display: flex;
+            justify-content: space-between;
+            width: 1060px;
+            margin: 0 auto;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+        li{
+            display: inline-block;
+            vertical-align: top;
+            width: 49%;
+            margin-bottom: 25px;
+            margin-right: 0px;
+            padding: 0px 20px;
+            @include media-breakpoint-up(md){
+                width: 225px;
+                margin-right: 50px;
+                padding: 0px;
             }
-            li{
-                display: inline-block;
-                vertical-align: top;
-                width: 49%;
-                margin-bottom: 25px;
-                padding: 0px 20px;
+            &:nth-child(2n){
+                margin-top: 0px;
                 @include media-breakpoint-up(md){
-                    width: 225px;
-                    padding: 0px;
-                }
-                &:nth-child(2n){
-                    margin-top: 0px;
-                    @include media-breakpoint-up(md){
-                        margin-top: 98px;
-                    }
-                }
-                h4{
-                    margin-bottom: 15px;
+                    margin-top: 98px;
                 }
             }
         }
+    }
+}
+
+.sp-team-block{
+    padding: 95px 0px 0px;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/blue-gradient.png');
+}
+
+.sp-advisor-block{
+    padding: 95px 0px 0px;
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    h2{
+        color: $black;
+    }
+    h4{
+        color: $black;
+    }
+    .sp-member-subtext{
+        margin-top: 10px;
+        color: $black;
     }
 }
 
@@ -1570,6 +1584,84 @@
 }
 
 
+.sp-supportedby-block {
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 1;
+    padding: 73px 0px 70px;
+    h2{
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        max-width: 220px;
+        margin: auto;
+        @include media-breakpoint-up(md){
+            font-size: 35px;
+            line-height: 40px; 
+            max-width: 100%;
+        }
+        @include media-breakpoint-up(xl){
+            font-size: 40px;
+            line-height: 45px;
+            letter-spacing: -1px;
+        }
+    }
+    .sp-supportedby-icon{
+        ul{
+            padding: 0 50px 0 50px;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                padding: 56px 0 0px;
+                width: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+                @include media-breakpoint-up(md){
+                    width: 16.66%;
+                    margin: 10px 0px;
+                }
+                i{
+                    background-position: center center;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    display: block;
+                    margin: auto;
+                }
+                .sp-rdv{
+                    height: 72px;
+                    width: 56px;
+                    background-image: url('../../assets/images/backers/roughdraft.png');
+                }
+                .sp-jp{
+                    height: 50px;
+                    width: 200px;
+                    background-image: url('../../assets/images/backers/jpmorgan.png');
+                }
+                .sp-drf{
+                    height: 145px;
+                    width: 145px;
+                    background-image: url('../../assets/images/backers/dormroom.png');
+                }
+                .sp-tsai{
+                    height: 100px;
+                    width: 128px;
+                    background-image: url('../../assets/images/backers/tsai.png');
+                }
+            }
+        }
+    }
+}
+
 .sp-social-block{
     border-bottom: 1px solid #eeeeee;
     width: 100%;
@@ -1699,6 +1791,9 @@
                     }
                     .sp-medium{
                         background-image: url('../../assets/images/social/medium-icon.svg');
+                    }
+                    .sp-crunchbase{
+                        background-image: url('../../assets/images/social/crunchbase-icon.svg');
                     }
                 }
             }

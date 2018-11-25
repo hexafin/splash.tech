@@ -41,7 +41,8 @@ class Landing extends Component {
                                     
                                     <p data-aos="fade-zoom-in" data-aos-delay="3000">Mobile-first banking platform for blockchain assets</p>
                                     <div data-aos="fade-zoom-in" data-aos-delay="3000">
-                                        <a href="mailto:support@splash.tech?Subject=Join Splash's private beta">Join the private beta</a>
+                                        <a href="https://brycebjork.typeform.com/to/eah5J3">Join the private beta</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +61,7 @@ class Landing extends Component {
                         <div className="row m-0">
                             <div className="col-md-6 p-0 text-center">
                                 <div className="sp-feture-inner-imgblock sp-feture-inner-imgblock-left">
-                                    <h3 className="sp-sub-title">Fluid payments, phone to phone.</h3>
+                                    <h3 className="sp-sub-title">Easily send, receive, and spend crypto</h3>
                                     <div className="sp-mobile-img">
                                         <img alt="feture-img" src={require("../../assets/images/fetureimg-left.jpg")}/>
                                     </div>
@@ -68,7 +69,7 @@ class Landing extends Component {
                             </div>
                             <div className="col-md-6 p-0 text-center">
                                 <div className="sp-feture-inner-imgblock sp-feture-inner-imgblock-right">
-                                <h3 className="sp-sub-title">Overseas payments made instant.</h3>
+                                <h3 className="sp-sub-title">You control your digital cash and assets</h3>
                                     <div className="sp-mobile-img">
                                         <img alt="feture-img" src={require("../../assets/images/fetureimg-right.jpg")}/>
                                     </div>
@@ -77,7 +78,7 @@ class Landing extends Component {
                         </div>
                     </div>
                 </section>
-                <section className="sp-wallet-block">
+                {/*<section className="sp-wallet-block">
                     <div className="container">
                         <div className="sp-wallet-inner">
                             <div className="row">
@@ -98,7 +99,7 @@ class Landing extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
 
                 <section className="sp-browser-extension-block">
                     <div className="sp-extension-block">
@@ -116,8 +117,8 @@ class Landing extends Component {
                                     <div className="row">
                                         <div className="col-md-6 offset-md-3">
                                             <div className="sp-broser-desc">
-                                                <h3>Pay with Bitcoin wherever you shop online.</h3>
-                                                <p>Browser extension coming soon.</p>
+                                                <h3>Spend cryptocurrency at any website</h3>
+                                                <p>Splash Extension coming soon.</p>
                                                 <div className="sp-update-block" onMouseEnter={()=>this.showKeepMeUpdate()} onMouseLeave={()=>this.hideKeepMeUpdate()}>
                                                     <button id="keep-me-update-modal-btn" className="sp-keep-and-show-btn">Keep me updated</button>
                                                     <div className="sp-mail-box">
@@ -246,7 +247,7 @@ class Landing extends Component {
                                     <div className="col-sm-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 sp-colam-main">
                                     <div className="sp-welcome-section">
                                             <h2>Instant payments, no long addresses. </h2>
-                                            <p>Use splash tags instead of long, clunky bitcoin addresses.</p>
+                                            <p>Use <span>splashtags</span> instead of long, clunky bitcoin addresses.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +298,7 @@ class Landing extends Component {
                         <div className="row">
                             <div className="col-lg-10 offset-lg-1">
                                 <div className="sp-team-row">
-                                    <h2>Our leadership</h2>
+                                    <h2>Our team</h2>
                                     <ul className="sp-leadership-list">
                                         <li>
                                             <div className="sp-member-img">
@@ -305,8 +306,13 @@ class Landing extends Component {
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Daniel Wainryb</h4>
-                                                <span className="sp-post">Head of Product</span>
-                                                <span className="sp-member-subtext">McGill University</span>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">Head of Product</span>
+                                                    <a href="https://www.linkedin.com/in/daniel-wyb/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Enjoys building delightful products with smart and passionate people. Recent psychology and computer science major at McGill University. Previous co-founder at Pepperfilters. Fascinated by product, design, growth and building strong brands. Ran the NYC marathon once. That hurt, but it was worth it.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -315,8 +321,13 @@ class Landing extends Component {
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Lukas Burger</h4>
-                                                <span className="sp-post">CTO</span>
-                                                <span className="sp-member-subtext">Yale University</span>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">CTO</span>
+                                                    <a href="https://www.linkedin.com/in/lukas-burger-27521113a" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Lukas is a is a student at Yale University and software developer. At Yale, he is the Director of Projects at Yale Code4Good, where he has worked on software projects for Khushi Baby, a medical wearables company in India, the New Haven government and other non-profits worldwide. Professionally, he joined Narmi, a NYC startup creating a white label banking app for credit unions, where he led developement on their P2P Venmo integration.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -325,18 +336,30 @@ class Landing extends Component {
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Bryce Bjork</h4>
-                                                <span className="sp-post">CEO</span>
-                                                <span className="sp-member-subtext">Yale University</span>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">CEO</span>
+                                                    <a href="https://www.linkedin.com/in/brycedbjork/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Bryce is an experienced entrepreneur, investor, consultant, and developer. In high school, he started an online business (hireastudent.org) connecting students with local community members for task completion. Bryce also serves as an executive board member at the Yale Student Investment Group, where he led the Small Cap investment team which returned over 60%. Bryce is a life-long coder and full-stack developer who loves hacking together applications and working with other creators (sandboxatyale.com).</p>
                                             </div>
                                         </li>
+                                    </ul>
+                                    <ul className="sp-leadership-list">
                                         <li>
                                             <div className="sp-member-img">
                                                 <img alt="tony" src={require("../../assets/images/team/tony.jpg")}/>
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Tony Olivero</h4>
-                                                <span className="sp-post">COO</span>
-                                                <span className="sp-member-subtext">Yale University</span>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">COO</span>
+                                                    <a href="https://www.linkedin.com/in/oliveriotony/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Tony Oliverio is an experienced founder, consultant, and operational leader. Tony has worked at companies including Samba TV, a television data analytics company, and Monk Development, a leading digital consultancy for non-profits. Tony has been an entrepreneur from a young age, starting when he won the Planting a Seed social innovation prize in San Diego, CA. Additionally, Tony serves on the Executive Board of the Yale Undergraduate Consulting Group, advising businesses internationally on a range of strategic decisions.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -345,22 +368,41 @@ class Landing extends Component {
                                             </div>
                                             <div className="sp-member-detail">
                                                 <h4>Tyler Caldwell</h4>
-                                                <span className="sp-post">CFO</span>
-                                                <span className="sp-member-subtext">Yale University</span>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">CFO</span>
+                                                    <a href="https://www.linkedin.com/in/william-caldwell/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Tyler is a recent Yale University graduate with experience building successful startups and financing engineering projects. He has worked in business development for other startups, including BioVirtua, a telemedicine startup, where he worked on raising a seed round to building out the company's business model. In college, Tyler led the finance team for Bulldogs Racing, a championship-winning undergraduate group centered around designing and building formula race cars. A former award-winning debater, you can find Tyler debating any topic in his spare time, from politics to NBA basketball.</p>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="sp-advisor-block">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-10 offset-lg-1">
                                 <div className="sp-team-row">
-                                    <h2>Advisory board</h2>
+                                    <h2>Advisors</h2>
                                     <ul className="sp-advisory-list">
                                         <li>
                                             <div className="sp-member-img">
                                             <img alt="tyler" src={require("../../assets/images/team/andrew.png")}/>
                                             </div>
                                             <div className="sp-member-detail">
-                                                <h4>Andrew McLaughlin</h4>
-                                                <span className="sp-member-subtext">Exexutive Director Tsai CITY</span>
+                                                <div className="sp-post-row">
+                                                    <h4>Andrew McLaughlin</h4>
+                                                    <a href="https://www.linkedin.com/in/andrewmclaughlin/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-black"></i>
+                                                    </a>
+                                                </div>
+                                                <span className="sp-member-subtext">Executive Director Tsai CITY</span>
                                             </div>
                                         </li>
                                         <li>
@@ -368,8 +410,13 @@ class Landing extends Component {
                                                 <img alt="martin" src={require("../../assets/images/team/martin.jpg")}/>
                                             </div>
                                             <div className="sp-member-detail">
-                                                <h4>Martin Wainstein</h4>
-                                                <span className="sp-member-subtext">Advisor, Open Innocation Fellow Tsai CITY, Digital Currency Initiative at MIT</span>
+                                                <div className="sp-post-row">
+                                                    <h4>Martin Wainstein</h4>
+                                                    <a href="https://www.linkedin.com/in/martinwainstein/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-black"></i>
+                                                    </a>
+                                                </div>
+                                                <span className="sp-member-subtext">Advisor, Open Innovation Fellow Tsai CITY, Digital Currency Initiative at MIT</span>
                                             </div>
                                         </li>
                                         <li>
@@ -377,9 +424,42 @@ class Landing extends Component {
                                                 <img alt="daniel" src={require("../../assets/images/team/danial-wolf.png")}/>
                                             </div>
                                             <div className="sp-member-detail">
-                                                <h4>Daniel DeWolf</h4>
+                                                <div className="sp-post-row">
+                                                    <h4>Daniel DeWolf</h4>
+                                                    <a href="https://www.linkedin.com/in/daniel-dewolf-1455399/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-black"></i>
+                                                    </a>
+                                                </div>
                                                 <span className="sp-member-subtext">Chair, Author, VC Mintz Levin</span>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="sp-supportedby-block">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <h2>Supported By</h2>
+                                <div className="sp-supportedby-icon">
+                                    <ul>
+                                        <li>
+                                            <i className="sp-rdv"></i>
+                                        </li>
+                                        {/*
+                                        <li>
+                                            <i className="sp-jp"></i>
+                                        </li>
+                                        */}
+                                        <li>
+                                            <i className="sp-drf"></i>
+                                        </li>
+                                        <li>
+                                            <i className="sp-tsai"></i>
                                         </li>
                                     </ul>
                                 </div>
@@ -450,7 +530,7 @@ class Landing extends Component {
                                 <div className="sp-social-icon">
                                     <ul>
                                         <li>
-                                            <a href="https://twitter.com/Splash_Wallet" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://twitter.com/splashwallet" target="_blank" rel="noopener noreferrer">
                                                 <i className="sp-tw"></i><span>Twitter</span>
                                             </a>
                                         </li>
@@ -477,6 +557,11 @@ class Landing extends Component {
                                         <li>
                                             <a href="https://medium.com/splash-wallet" target="_blank" rel="noopener noreferrer">
                                             <i className="sp-medium"></i><span>Medium</span>
+                                                </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.crunchbase.com/organization/splash-tech" target="_blank" rel="noopener noreferrer">
+                                            <i className="sp-crunchbase"></i><span>Crunchbase</span>
                                                 </a>
                                         </li>
                                     </ul>
@@ -564,9 +649,9 @@ class Landing extends Component {
         }
         if (data.name && data.email && data.subject && data.text) {
             ContactUsService.sendMessage(data).then(() => {
-                console.log('yes')
+                CommanService.showToaster('success',"Thanks for your interest in Splash! We’ll keep you in the loop.");
             }).catch(e => {
-                console.log(e.data)
+                CommanService.showToaster(e.response.status, e.message);
             })
         } else {
             CommanService.showToaster('failure','Please fill in all info.');
