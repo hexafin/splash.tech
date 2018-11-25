@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import * as NewsLetterService from '../../services/NewsLatterService';
 import * as ContactUsService from '../../services/ContactUsService';
 import * as CommanService from '../../services/CommanService';
+import Typist from 'react-typist'
 
 class Landing extends Component {
     state = {
@@ -25,10 +26,23 @@ class Landing extends Component {
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1 sp-colm-size-deskpot">
                                 <div className="sp-banner-inner-detail">
-                                    <h1 data-aos="fade-zoom-in" data-aos-delay="500">Using cryptocurrency just got a lot easier.</h1>
-                                    <p data-aos="fade-zoom-in" data-aos-delay="600">The most user-friendly crypto wallet.</p>
-                                    <div data-aos="fade-zoom-in" data-aos-delay="600">
+                                    
+                                    <h1>
+                                      Finally, a user-friendly{" "}
+                                      <Typist
+                                        avgTypingDelay={100}
+                                        className="landing-typist">
+                                        crypto wallet
+                                        <Typist.Delay ms={500} />
+                                        <Typist.Backspace count={6} delay={300} />
+                                        solution
+                                      </Typist>
+                                    </h1>
+                                    
+                                    <p data-aos="fade-zoom-in" data-aos-delay="3000">Mobile-first banking platform for blockchain assets</p>
+                                    <div data-aos="fade-zoom-in" data-aos-delay="3000">
                                         <a href="https://brycebjork.typeform.com/to/eah5J3">Join the private beta</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +61,7 @@ class Landing extends Component {
                         <div className="row m-0">
                             <div className="col-md-6 p-0 text-center">
                                 <div className="sp-feture-inner-imgblock sp-feture-inner-imgblock-left">
-                                    <h3 className="sp-sub-title">Fluid payments, phone to phone.</h3>
+                                    <h3 className="sp-sub-title">Easily send, receive, and spend crypto</h3>
                                     <div className="sp-mobile-img">
                                         <img alt="feture-img" src={require("../../assets/images/fetureimg-left.jpg")}/>
                                     </div>
@@ -55,7 +69,7 @@ class Landing extends Component {
                             </div>
                             <div className="col-md-6 p-0 text-center">
                                 <div className="sp-feture-inner-imgblock sp-feture-inner-imgblock-right">
-                                <h3 className="sp-sub-title">Overseas payments made instant.</h3>
+                                <h3 className="sp-sub-title">You control your digital cash and assets</h3>
                                     <div className="sp-mobile-img">
                                         <img alt="feture-img" src={require("../../assets/images/fetureimg-right.jpg")}/>
                                     </div>
@@ -103,8 +117,8 @@ class Landing extends Component {
                                     <div className="row">
                                         <div className="col-md-6 offset-md-3">
                                             <div className="sp-broser-desc">
-                                                <h3>Pay with Bitcoin wherever you shop online.</h3>
-                                                <p>Browser extension coming soon.</p>
+                                                <h3>Spend cryptocurrency at any website</h3>
+                                                <p>Splash Extension coming soon.</p>
                                                 <div className="sp-update-block" onMouseEnter={()=>this.showKeepMeUpdate()} onMouseLeave={()=>this.hideKeepMeUpdate()}>
                                                     <button id="keep-me-update-modal-btn" className="sp-keep-and-show-btn">Keep me updated</button>
                                                     <div className="sp-mail-box">
@@ -233,7 +247,7 @@ class Landing extends Component {
                                     <div className="col-sm-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2 sp-colam-main">
                                     <div className="sp-welcome-section">
                                             <h2>Instant payments, no long addresses. </h2>
-                                            <p>Use splash tags instead of long, clunky bitcoin addresses.</p>
+                                            <p>Use <span>splashtags</span> instead of long, clunky bitcoin addresses.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -436,9 +450,11 @@ class Landing extends Component {
                                         <li>
                                             <i className="sp-rdv"></i>
                                         </li>
+                                        {/*
                                         <li>
                                             <i className="sp-jp"></i>
                                         </li>
+                                        */}
                                         <li>
                                             <i className="sp-drf"></i>
                                         </li>
