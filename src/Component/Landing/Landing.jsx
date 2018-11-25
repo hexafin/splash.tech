@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import * as NewsLetterService from '../../services/NewsLatterService';
 import * as ContactUsService from '../../services/ContactUsService';
 import * as CommanService from '../../services/CommanService';
+import Typist from 'react-typist'
 
 class Landing extends Component {
     state = {
@@ -25,9 +26,21 @@ class Landing extends Component {
                         <div className="row">
                             <div className="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1 sp-colm-size-deskpot">
                                 <div className="sp-banner-inner-detail">
-                                    <h1 data-aos="fade-zoom-in" data-aos-delay="500">Using cryptocurrency just got a lot easier.</h1>
-                                    <p data-aos="fade-zoom-in" data-aos-delay="600">The most user friendly crypto wallet.</p>
-                                    <div data-aos="fade-zoom-in" data-aos-delay="600">
+                                    
+                                    <h1>
+                                      Finally, a user-friendly{" "}
+                                      <Typist
+                                        avgTypingDelay={100}
+                                        className="landing-typist">
+                                        crypto wallet
+                                        <Typist.Delay ms={500} />
+                                        <Typist.Backspace count={6} delay={300} />
+                                        solution
+                                      </Typist>
+                                    </h1>
+                                    
+                                    <p data-aos="fade-zoom-in" data-aos-delay="3000">Mobile-first banking platform for blockchain assets</p>
+                                    <div data-aos="fade-zoom-in" data-aos-delay="3000">
                                         <a href="mailto:support@splash.tech?Subject=Join Splash's private beta">Join the private beta</a>
                                     </div>
                                 </div>
