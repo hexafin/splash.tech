@@ -549,11 +549,11 @@ class Landing extends Component {
                                                 <i className="sp-linkedin"></i><span>Linkedin</span>
                                             </a>
                                         </li>
-                                        <li>
+                                        {/*<li>
                                             <a href="https://t.me/joinchat/EjQODwyF10VliZ4fQ0SL8Q" target="_blank" rel="noopener noreferrer">
                                                 <i className="sp-telegram"></i><span>Telegram</span>
                                             </a>
-                                        </li>
+                                        </li>*/}
                                         <li>
                                             <a href="https://medium.com/splash-wallet" target="_blank" rel="noopener noreferrer">
                                             <i className="sp-medium"></i><span>Medium</span>
