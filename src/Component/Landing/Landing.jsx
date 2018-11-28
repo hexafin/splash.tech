@@ -312,7 +312,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Enjoys building delightful products with smart and passionate people. Recent psychology and computer science major at McGill University. Previous co-founder at Pepperfilters. Fascinated by product, design, growth and building strong brands. Ran the NYC marathon once. That hurt, but it was worth it.</p>
+                                                <p>Daniel is a recent McGill graduate with a proven track record of designing, launching, and scaling products. In college, Daniel founded Pepper Filters, the first Snapchat geofilter maker, and received international recognition for its success.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -327,7 +327,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Lukas is a is a student at Yale University and software developer. At Yale, he is the Director of Projects at Yale Code4Good, where he has worked on software projects for Khushi Baby, a medical wearables company in India, the New Haven government and other non-profits worldwide. Professionally, he joined Narmi, a NYC startup creating a white label banking app for credit unions, where he led developement on their P2P Venmo integration.</p>
+                                                <p>Lukas has experience in software development, banking, and social good. He has worked on software projects for Khushi Baby, a medical wearables company based in India, the New Haven government and other non-profits in the Connecticut area. He has always loved building, from a hacked together GPS dog tracker to an iOS app. Professionally, he joined Narmi, a NYC startup creating a white label banking app for credit unions, where he led development of a P2P Venmo integration.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -342,7 +342,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Bryce is an experienced entrepreneur, investor, consultant, and developer. In high school, he started an online business (hireastudent.org) connecting students with local community members for task completion. Bryce also serves as an executive board member at the Yale Student Investment Group, where he led the Small Cap investment team which returned over 60%. Bryce is a life-long coder and full-stack developer who loves hacking together applications and working with other creators (sandboxatyale.com).</p>
+                                                <p>Bryce is an experienced entrepreneur, investor, consultant, and developer. In high school, he started an online business (hireastudent.org) connecting students with local community members for task completion, having facilitating over 500 community jobs in over 10 communities. Bryce is a life-long coder and full-stack developer who loves designing, building, and scaling applications with other creators (sandboxatyale.com).</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -359,7 +359,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Tony Oliverio is an experienced founder, consultant, and operational leader. Tony has worked at companies including Samba TV, a television data analytics company, and Monk Development, a leading digital consultancy for non-profits. Tony has been an entrepreneur from a young age, starting when he won the Planting a Seed social innovation prize in San Diego, CA. Additionally, Tony serves on the Executive Board of the Yale Undergraduate Consulting Group, advising businesses internationally on a range of strategic decisions.</p>
+                                                <p>Tony is a student at Yale University with experience leading high- growth technology companies and international nonprofit organizations to success. Tony worked at Samba TV, a television data analytics company revolutionizing the way advertisers interact with television viewers. An entrepreneur from a young age, he won the Planting a Seed social innovation prize in San Diego, creating a sleeping solution for the homeless. He’s been involved in a variety of startup ventures since, including Monk Development.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -374,7 +374,22 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Tyler is a recent Yale University graduate with experience building successful startups and financing engineering projects. He has worked in business development for other startups, including BioVirtua, a telemedicine startup, where he worked on raising a seed round to building out the company's business model. In college, Tyler led the finance team for Bulldogs Racing, a championship-winning undergraduate group centered around designing and building formula race cars. A former award-winning debater, you can find Tyler debating any topic in his spare time, from politics to NBA basketball.</p>
+                                                <p>Tyler is a recent Yale University graduate with experience building successful startups and leading financing and engineering projects. He has worked in business development and financial operations for other startups and projects, including the successful BioVirtua, a telemedicine startup. There he worked on tasks from raising a seed sound to building out the company's business model.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="sp-member-img">
+                                                <img alt="taewan" src={require("../../assets/images/team/taewan.png")}/>
+                                            </div>
+                                            <div className="sp-member-detail">
+                                                <h4>Taewan Shim</h4>
+                                                <div className="sp-post-row">
+                                                    <span className="sp-post">Head of Business Development</span>
+                                                    <a href="https://www.linkedin.com/in/taewan-shim-65b080121/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-white"></i>
+                                                    </a>
+                                                </div>
+                                                <p>Taewan studies at Columbia University. Taewan has experience with other FinTech, TravelTech, and EdTech startups and has worked for several boutique investment banks.</p>
                                             </div>
                                         </li>
                                     </ul>
@@ -390,7 +405,7 @@ class Landing extends Component {
                             <div className="col-lg-10 offset-lg-1">
                                 <div className="sp-team-row">
                                     <h2>Advisors</h2>
-                                    <ul className="sp-advisory-list">
+                                    <ul className="sp-leadership-list">
                                         <li>
                                             <div className="sp-member-img">
                                             <img alt="tyler" src={require("../../assets/images/team/andrew.png")}/>
@@ -430,7 +445,21 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-black"></i>
                                                     </a>
                                                 </div>
-                                                <span className="sp-member-subtext">Chair, Author, VC Mintz Levin</span>
+                                                <span className="sp-member-subtext">Chair, Author, VC at Mintz Levin</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="sp-member-img">
+                                                <img alt="ben" src={require("../../assets/images/team/ben.jpg")}/>
+                                            </div>
+                                            <div className="sp-member-detail">
+                                                <div className="sp-post-row">
+                                                    <h4>Ben Boissevain</h4>
+                                                    <a href="https://www.linkedin.com/in/benboissevain/" target="_blank" rel="noopener noreferrer">
+                                                        <i className="sp-linkedin-black"></i>
+                                                    </a>
+                                                </div>
+                                                <span className="sp-member-subtext">Managing Partner of Ascento Capital</span>
                                             </div>
                                         </li>
                                     </ul>
