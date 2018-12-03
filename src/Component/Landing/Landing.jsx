@@ -374,7 +374,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Tyler is a recent Yale University graduate with experience building successful startups and leading financing and engineering projects. He has worked in business development and financial operations for other startups and projects, including the successful BioVirtua, a telemedicine startup. There he worked on tasks from raising a seed sound to building out the company's business model.</p>
+                                                <p>Tyler is a recent Yale University graduate with experience building successful startups and leading financing and engineering projects. He has worked in business development and financial operations for other startups and projects, including the successful BioVirtua, a telemedicine startup. There he worked on tasks from raising a seed round to building out the company’s business model.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -389,7 +389,7 @@ class Landing extends Component {
                                                         <i className="sp-linkedin-white"></i>
                                                     </a>
                                                 </div>
-                                                <p>Taewan studies at Columbia University. Taewan has experience with other FinTech, TravelTech, and EdTech startups and has worked for several boutique investment banks.</p>
+                                                <p>Taewan studies at Columbia University. Taewan has experience with other FinTech, TravelTech, and EdTech startups and has worked for several boutique investment banks focused in technology sector. While working at Gooroo, an EdTech that connects students to tutors, he helped his team win 1st Place in KITEE (Korean-American Innovative Technology Engineers and Entrepreneurs) Pitch Competition.</p>
                                             </div>
                                         </li>
                                     </ul>
