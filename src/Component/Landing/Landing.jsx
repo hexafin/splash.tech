@@ -41,6 +41,39 @@ class Landing extends Component {
                     />
                 </div>
 
+                <div className="sp-three-page wave">
+                    <h2>Get started in minutes, not days</h2>
+                    <div className="phones">
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                claim your splashtag
+                            </p>
+                        </div>
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                verify your phone number
+                            </p>
+                        </div>
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                start using crypto!
+                            </p>
+                        </div>
+                    </div>
+                </div>                
+
                 <div className="sp-three-page pattern">
                     <h2>Pay friends and merchants with confidence</h2>
                     <h3>
@@ -77,6 +110,32 @@ class Landing extends Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="sp-splashtag wave">
+                    <h2>@splashtags instead of long bitcoin addresses</h2>
+                    <div className="boxes">
+                        <div className="box-wrapper">
+                            <div className="box">
+                                <p className="box-text">
+                                    1PKgt9bNFhqpebvPgH
+                                    5zfr2TfqXwuZsCHv
+                                </p>
+                            </div>
+                            <p className="box-description">
+                                other wallets
+                            </p>
+                        </div>
+                        <img className="arrow" src={require("../../assets/images/right-arrow.svg")} />
+                        <div className="box-wrapper">
+                            <div className="box">
+                                <p className="box-text">
+                                    Pay @bryce
+                                </p>
+                            </div>
+                            <img className="splash" src={require("../../assets/images/white-splash.png")} />
+                        </div>
+                    </div>
+                </div>                
 
                 <section className="sp-supportedby-block">
                     <div className="container">
