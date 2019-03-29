@@ -15,7 +15,7 @@ class Landing extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="sp-welcome">
+                <div className="sp-welcome pattern">
                     <h1>Crypto designed for people, not computers</h1>
                     <h3>
                         Easily store, send, and receive cryptocurrency with the
@@ -39,6 +39,43 @@ class Landing extends Component {
                         src={require("../../assets/images/kira.png")}
                         className="sp-floating-person sp-person-3"
                     />
+                </div>
+
+                <div className="sp-three-page pattern">
+                    <h2>Pay friends and merchants with confidence</h2>
+                    <h3>
+                        Splash makes it easy to use crypto with the people who
+                        matter most
+                    </h3>
+                    <div className="phones">
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                find account by splashtag
+                            </p>
+                        </div>
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                sync your contacts
+                            </p>
+                        </div>
+                        <div className="phone-wrapper">
+                            <img
+                                src={require("../../assets/images/scan-qr.png")}
+                                className="phone"
+                            />
+                            <p className="phone-description">
+                                scan and show QR
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 <section className="sp-supportedby-block">

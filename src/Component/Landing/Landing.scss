@@ -2,6 +2,11 @@
 @import "../../assets/scss/mixin";
 @import "bootstrap/scss/bootstrap.scss";
 
+.pattern {
+    background: url("../../assets/images/pattern.png") repeat 850px;
+    background-color: white;
+}
+
 .sp-welcome {
     min-height: 80vh;
     width: 100%;
@@ -12,8 +17,6 @@
     padding-bottom: 30vh;
     position: relative;
     z-index: 1;
-    background: url("../../assets/images/pattern.png") repeat 850px;
-    background-color: white;
     h1 {
         font-size: 36px;
         font-weight: 800;
@@ -21,12 +24,12 @@
     h3 {
         font-size: 20px;
         font-weight: 500;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .sp-welcome-appstore {
         height: 60px;
         width: auto;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 }
 
@@ -49,20 +52,79 @@
     animation-name: wiggle;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    @media screen and (max-width: 600px) {
+        width: 120px;
+    }
 }
 .sp-person-1 {
     bottom: 20vh;
     left: 40vw;
+    @media screen and (max-width: 600px) {
+        bottom: 10vh;
+        left: 20px;
+    }
 }
 .sp-person-2 {
     bottom: 15vh;
     left: 70vw;
     animation-delay: -1s;
+    @media screen and (max-width: 600px) {
+        display: none;
+        bottom: 10vh;
+        left: 50vw;
+    }
 }
 .sp-person-3 {
     bottom: 42vh;
     left: 78vw;
     animation-delay: -2s;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.sp-three-page {
+    min-height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .phones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .phone-wrapper {
+        margin-top: 80px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone {
+        width: 250px;
+    }
+    .phone-description {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
 }
 
 .sp-sub-title {
