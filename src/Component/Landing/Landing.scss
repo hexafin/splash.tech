@@ -7,6 +7,27 @@
     background-color: white;
 }
 
+.wave {
+    min-height: 1047px !important;
+    background: url("../../assets/images/wave-background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    h2 {
+        padding-left: 20px !important;
+        padding-top: 150px !important;   
+        color: white !important;
+    }
+    h3 {
+        padding-left: 20px !important;
+    }
+    p {
+        color: white !important;
+    }
+    padding-bottom: 100px !important;
+    padding-left: 0px !important;
+}
+
 .sp-welcome {
     min-height: 80vh;
     width: 100%;
@@ -84,6 +105,7 @@
 }
 
 .sp-three-page {
+    background-color: white;
     min-height: 80vh;
     width: 100%;
     box-sizing: border-box;
@@ -124,6 +146,78 @@
         font-size: 20px;
         font-weight: 600;
         margin-top: 20px;
+    }
+}
+
+.sp-splashtag {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .boxes {
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+    }
+    .box-wrapper {
+        margin-top: 80px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow {
+        width: 56px;
+        height: 32px;
+    }
+    .box {
+        border-radius: 10px;
+        background: rgba(255,255,255,0.3);
+        height: 159px;
+        width: 401px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+    .box-description {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .box-text {
+        word-wrap: break-word;
+        line-height: 31px;
+        font-size: 20px;
+        color: white;
+        opacity: 1 !important;
+        font-weight: 600;
+
+    }
+    .splash {
+        margin-top: 20px;
+        height: 26px;
+        width: 109px;
     }
 }
 
@@ -567,4 +661,19 @@
             }
         }
     }
+}
+
+.sp-wave-background-block {
+    width: 100%;
+    background: white;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.wave-background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
